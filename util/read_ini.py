@@ -19,8 +19,9 @@ class ReadIni(object):
         return cf
 
     def get_value(self, key):
-        self.cf.get(self.node, key)
-        print(self.cf.get(self.node, key))
+        value = self.cf.get(self.node, key)
+        print(value)
+        return value
 
 
 if __name__ == '__main__':
